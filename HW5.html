@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Main Container */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Left Panel */
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            height: auto;
+        }
+
+        /* Photo Panel */
+        .photo-panel {
+            background-image: url('your-photo.jpg'); /* 替換為您的照片檔案名 */
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+        }
+
+        /* Text Content */
+        .text-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .text-content h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .text-content section {
+            margin-bottom: 20px;
+        }
+
+        .text-content .nccu-icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Right Panel */
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            width: 540px;
+            height: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Education Section (Timeline) */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .year {
+            font-weight: bold;
+        }
+
+        .description {
+            margin-left: 10px;
+        }
+
+        /* Favorite Music Section */
+        .favorite-music ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .favorite-music li {
+            flex: 1 1 calc(50% - 15px);
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .favorite-music img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .favorite-music a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .favorite-music a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <div class="photo-panel"></div>
+            <div class="text-content">
+                <section class="about-me">
+                    <h2>About Me</h2>
+                    <p>Love -41.</p>
+                </section>
+                <section class="contact-info">
+                    <h2>Contact Info</h2>
+                    <p>Email: 112306040@g.nccu.edu.tw</p>
+                    <p>Phone: 123-456-7890</p>
+                </section>
+                <div class="nccu-icon">
+                    <img src="nccu-icon.png" alt="NCCU Icon">
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <section class="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2023</span>
+                        <p class="description">Bachelor of Science in Computer Science</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2020</span>
+                        <p class="description">High School Diploma</p>
+                    </div>
+                </div>
+            </section>
+            <section class="homework">
+                <h2>Homework List</h2>
+                <ul>
+                    <li>accounting</li>
+                    <li>calculus</li>
+                    <li>SAD</li>
+                    <li>MIS</li>
+                    <li>statistics</li>
+                    <li>DS</li>
+                    <li>CS</li>
+                </ul>
+            </section>
+            <section class="favorite-music">
+                <h2>Favorite Music</h2>
+                <ul>
+                    <li>
+                        <a href="https://open.spotify.com/track/45J4avUb9Ni0bnETYaYFVJ?si=983cb7d31ce44bc4">
+                            <img src="luther.jpg" alt="Album 1">
+                            luther
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/track/4e1aewX6ATPcdfQIqr7gqO?si=a426202cb9994e86">
+                            <img src="sticky.png" alt="Album 2">
+                            sticky
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/track/5YABYtKx9qa56vBjlXDbmw?si=596ac98973124ade">
+                            <img src="snooze.png" alt="Album 3">
+                            snooze
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
